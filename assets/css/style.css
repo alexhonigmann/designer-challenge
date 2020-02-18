@@ -3,6 +3,22 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+@media only screen and (max-widht: 600px){
+    body{
+        width: 50%;
+        height: 200%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo-box{
+        padding: 0;
+    }
+    .logo{
+        padding: 0;
+    }
+}
+
+/* Nach vielen Versuchen mit mediaqueries, habe ich Aufgrund der Zeiteinschränkung, habe ich es nicht geschafft */
 
 /* header ***********************/
 .header-background{
@@ -55,7 +71,6 @@
 
 .ilust-people{
     height: 80vh;
-    margin: -100px 0 -50px -200px;
     animation: pulse 0.6s  ease infinite;
 }
 @keyframes pulse{
@@ -85,27 +100,29 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around   ;
 }
 
 .idea-box h1{
     width: 40vw;
     height: 25vh;
-    margin: 50px 20px 20px 40px;
     font-size: 9vh;
+    align-self: center;
+    justify-self: center;
 }
 .idea-box p{
     width: 40vw;
     height: 60vh;
-    margin:  50px 20px 0px 40px;
     font-size: 2.1vh;
-    line-height: 2em
+    line-height: 2em;
 }
 
 .idea-box h2{
     width: 60vw;
     height: 45vh;
-    margin: 10px 20px 20px 40px;
     font-size: 8.5vh;
+    align-self: center;
+    justify-self: center;   
 }
 
 /* title ***************************/
