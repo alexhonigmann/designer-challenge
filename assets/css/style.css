@@ -48,19 +48,29 @@
 }
 
 .head h1{
-    font-size: 7vh;
+    font-size: 5.5#EC3E71 bvw;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .ilust-people{
-    height: 800px;
+    height: 80vh;
     margin: -100px 0 -50px -200px;
+    animation: pulse 0.6s  ease infinite;
+}
+@keyframes pulse{
+    0%{ margin-top: -5vh;}
+    20%{ margin-top: -4vh;}
+    40%{margin-top: -3vh;}
+    60%{margin-top: -2vh;}
+    80%{margin-top: -3vh;}
+    100%{margin-top: -4vh;}
 }
  .scroll{
      color:#F63572;
      margin-left: 8%;
-
+    position: absolute;
+    bottom: 2vh;
  }
 
 /* main ******************************/
@@ -154,12 +164,80 @@
     align-items: center;
 }
 
-
-
-.step-one
-
-.step-one-img{
-    
-
+.steps-nummber{
+    margin: 8vh 0;
+    color: #DDDDDD;
+    font-size: 9vh;
 }
+.steps h2{
+    padding-bottom: 2vh;
+}
+.steps p{
+    line-height: 1.7em;
+}
+.step-one, .step-three, .step-two, .step-four{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.step-one div, .step-three div, .step-two div, .step-four div{
+    width: 40%;
+}
+.step-one-img, .step-three-img, .step-two-img, .step-four-img{
+    width: 40vw;
+}
+
+/* footer ***************************/
+
+.footer{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h1{
+    font-weight: 700;
+    font-size: 6vh;
+    margin: -100px 0 100px;
+}
+.footer p{
+    font-weight: 400;
+    font-size: 3vh;
+    margin-bottom: 100px;
+}
+
+.email{
+    height: 10vh;
+    width: 40vw;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.205);
+    text-align: center;
+    font-size: 2.5vh;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.sub{
+    background-color: #F63572;
+    height: 8vh;
+    width: 22vw;
+    margin-top: 8vh;
+    color: white;
+    font-size: 2.5vh;
+    border-radius: 5px;
+}
+.sub:hover{
+    background-image: linear-gradient(to right,#EC3E71,#482ebc)
+}
+
+footer p:last-child{
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+
 
